@@ -20,7 +20,7 @@
         conn = DriverManager.getConnection("jdbc:mysql://localhost:7799/test", "pricer", "pricer");
 
 
-        String jrxmlFile = this.getClass().getResource("/report1.jrxml").getPath();
+        String jrxmlFile = this.getClass().getResource("/out_of_stock.jrxml").getPath();
         InputStream input = new FileInputStream(new File(jrxmlFile));
 
 
