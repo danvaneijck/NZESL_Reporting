@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.2.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ESL_RECENT_ROAMING_REPORT" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" resourceBundle="localization" uuid="ba55f728-c7d6-48fd-a124-9a14cc485ee9">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="2.4200000000000004"/>
+	<property name="ireport.x" value="6"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SQLDataAdapter.xml"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="imagePath" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="storeName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="recentRoamingDays" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["3"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM ITEM WHERE OUT_OF_STOCK IS NOT NULL]]>
+	</queryString>
+	<field name="ITEMID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ITEM_NAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="OUT_OF_STOCK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="Count" class="java.lang.Integer" resetType="Group" resetGroup="ITEMIDNEW" calculation="Count">
+		<variableExpression><![CDATA[$V{ITEMIDNEW_COUNT}]]></variableExpression>
+	</variable>
+	<group name="ITEMIDNEW">
+		<groupExpression><![CDATA[$F{ITEMID}]]></groupExpression>
+		<groupHeader>
+			<band splitType="Stretch"/>
+		</groupHeader>
+		<groupFooter>
+			<band splitType="Stretch"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="73" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-12" x="0" y="42" width="233" height="24" uuid="4b66340a-9a0b-477e-b83d-f762b933264d"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{storeName}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-4" positionType="FixRelativeToBottom" x="1" y="69" width="534" height="1" forecolor="#000000" uuid="7d2f9540-efbf-4da0-b361-db195d1223c0"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="26" splitType="Stretch">
+			<textField isStretchWithOverflow="true" evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement key="textField-13" x="268" y="4" width="263" height="18" uuid="169f2a97-905f-476e-9f45-0e5266d60072"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="14" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[java.text.DateFormat.getDateTimeInstance(0,2).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-3" positionType="FixRelativeToBottom" x="0" y="22" width="534" height="1" forecolor="#000000" uuid="0cca4324-a844-4fdc-b08c-12f95ecdf7c6"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<line>
+				<reportElement key="line-2" positionType="FixRelativeToBottom" x="0" y="20" width="534" height="1" forecolor="#000000" uuid="68135dd0-93c5-4a7f-aedd-67ce85cf5f4a"/>
+			</line>
+			<staticText>
+				<reportElement x="370" y="0" width="100" height="21" uuid="e96944c5-005a-462a-afee-38e2cc2debeb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00840ea8-e8c7-47bb-8e60-343e4f7200c1"/>
+				</reportElement>
+				<text><![CDATA[OUT_OF_STOCK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="-4" width="119" height="24" uuid="06f42ad3-82f8-41a4-9222-c9a5bc3df19d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d48e33e-e65f-4f2d-a37b-5ac2b791e5d8"/>
+				</reportElement>
+				<text><![CDATA[ITEMID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="-3" width="111" height="23" uuid="66232406-1888-4ca6-98a0-9173c3ce7d1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="95ac6e44-4f9d-4cd0-93de-7d441089de26"/>
+				</reportElement>
+				<text><![CDATA[ITEM_NAME]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement x="370" y="10" width="100" height="30" uuid="ed041623-73cc-4882-aac3-4b6e2ea347d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00840ea8-e8c7-47bb-8e60-343e4f7200c1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{OUT_OF_STOCK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="10" width="119" height="31" uuid="2ac3e011-944a-4266-bffe-cb30dde3cc96">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d48e33e-e65f-4f2d-a37b-5ac2b791e5d8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ITEMID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="10" width="100" height="30" uuid="89290b05-bfca-4789-929e-5dffb0df80a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="95ac6e44-4f9d-4cd0-93de-7d441089de26"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ITEM_NAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement key="textField" x="277" y="7" width="30" height="16" uuid="6a93ead4-d136-4339-9eb5-2ac15b517a9f"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-11" x="232" y="6" width="39" height="15" uuid="046eb7a8-d1bb-471d-9cbf-dbd0c77f49a9"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$R{reports.Page}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
