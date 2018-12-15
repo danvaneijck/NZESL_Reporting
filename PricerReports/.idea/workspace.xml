@@ -7,20 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7245d9f7-64ce-4a7e-b91c-0be6a4d7c6e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/localization.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/localization_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/localization_es.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/localization_fr.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricerReports.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PricerReports.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/WEB-INF/classes/out_of_stock.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/WEB-INF/classes/out_of_stock.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/WEB-INF/lib/jasperreports-3.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PricerReports_war_exploded/outOfStockReport.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/out_of_stock.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/out_of_stock.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jasperreports-3.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/outOfStockReport.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/OUT_OF_STOCK.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,47 +64,136 @@
     <session id="-460962668">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="jasper" value="1" />
-          <entry key="jrxml" value="14" />
-          <entry key="jsp" value="3" />
+          <entry key="jasper" value="3" />
+          <entry key="jrxml" value="22" />
+          <entry key="jsp" value="9" />
           <entry key="properties" value="2" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JSP" value="3" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JSP" value="9" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="14" />
+          <entry key="XML" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="jrxml" value="13" />
-          <entry key="jsp" value="108" />
+          <entry key="jsp" value="423" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSP" value="108" />
-          <entry key="XML" value="13" />
+          <entry key="JSP" value="423" />
+          <entry key="XML" value="27" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/PRICERLABEL_STATUS_REPORT.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/ESL_ROAMING_REPORT.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/ESL_SUMMARY_REPORT.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="166" selection-start-line="166" selection-end-line="166" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_LOW_BATTERY.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_WAITING_FOR_ ROAMING.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_WAITING_FOR_ UPDATE.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/LOW_BATTERY.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/PRICE_CHANGE_STATISTICS_REPORT.jrxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -125,8 +205,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>uuid=&quot;\w*-\w*-\w*-\w*-\w*&quot;</find>
-      <find>image</find>
       <find>localization</find>
+      <find>image</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,18 +218,28 @@
         <option value="$PROJECT_DIR$/web/outOfStockReport.xhtml" />
         <option value="$PROJECT_DIR$/web/out_of_stock.jrxml" />
         <option value="$PROJECT_DIR$/web/out_of_stock1.jrxml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/report1.jrxml" />
         <option value="$PROJECT_DIR$/web/outOfStockReport.jsp" />
         <option value="$PROJECT_DIR$/web/ESL_RECENT_ROAMING_REPORT.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/out_of_stock.jrxml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/ESL_RECENT_ROAMING_REPORT.jrxml" />
         <option value="$PROJECT_DIR$/web/SYSTEM_STATUS_REPORT.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/SYSTEM_STATUS_REPORT.jrxml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/INTER_SYSTEM_STATUS_REPORT_LEFT_SUBREPORT.jrxml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/FAULTY_TRX_DETAILS.jrxml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/SYSTEM_STATUS_REPORT_RIGHT_SUBREPORT.jrxml" />
+        <option value="$PROJECT_DIR$/web/LOW_BATTERY.jsp" />
+        <option value="$PROJECT_DIR$/web/ESL_SUMMARY.jsp" />
+        <option value="$PROJECT_DIR$/web/ESL_ROAMING.jsp" />
+        <option value="$PROJECT_DIR$/web/PRICE_CHANGE_STATISTICS.jsp" />
+        <option value="$PROJECT_DIR$/web/ESL_STATUS.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/ESL_ROAMING_REPORT.jrxml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/ESL_SUMMARY_REPORT.jrxml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/LOW_BATTERY.jrxml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/PRICE_CHANGE_STATISTICS_REPORT.jrxml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/PRICERLABEL_STATUS_REPORT.jrxml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -178,6 +268,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,15 +310,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544830780222" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544906574877" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/jasperreports-6.7.0.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -235,17 +325,17 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\danve\Desktop\NZESL_Reporting\PricerReports\web\WEB-INF\classes" />
-      <recent name="C:\Users\danve\Desktop\NZESL_Reporting\PricerReports\web" />
-      <recent name="C:\Users\danve\Desktop\NZESL_Reporting\PricerReports\web\WEB-INF\lib" />
-      <recent name="D:\PricerReports\web\WEB-INF\lib" />
-      <recent name="D:\PricerReports\web" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PricerReports\web\WEB-INF\classes" />
       <recent name="D:\PricerReports\web\WEB-INF" />
       <recent name="D:\PricerReports\web\WEB-INF\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danve\Desktop\NZESL_Reporting\PricerReports\web" />
+      <recent name="C:\Users\danve\Desktop\NZESL_Reporting\PricerReports\web\WEB-INF\classes" />
+      <recent name="C:\Users\danve\Desktop\NZESL_Reporting\PricerReports\web\WEB-INF\lib" />
+      <recent name="D:\PricerReports\web\WEB-INF\lib" />
+      <recent name="D:\PricerReports\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -318,16 +408,18 @@
       <workItem from="1544753296044" duration="464000" />
       <workItem from="1544826390922" duration="1547000" />
       <workItem from="1544827965961" duration="2943000" />
+      <workItem from="1544904207676" duration="2365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13253000" />
+    <option name="totallyTimeSpent" value="15618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17057654" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17693837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -371,21 +463,8 @@
     <entry file="file://$PROJECT_DIR$/web/out_of_stock.jrxml" />
     <entry file="file://$PROJECT_DIR$/web/out_of_stock1.jrxml" />
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jasperreports-6.7.0.jar!/net/sf/jasperreports/engine/JasperCompileManager.class" />
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jasperreports-3.5.3.jar!/net/sf/jasperreports/engine/xml/JRXmlLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jasperreports-3.5.3.jar!/net/sf/jasperreports/engine/xml/JRXmlLoader.class" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/localization.properties" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/OUT_OF_STOCK.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -404,13 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -471,6 +543,113 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="89" lean-forward="true" selection-start-line="33" selection-start-column="89" selection-end-line="33" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/LOW_BATTERY.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ESL_SUMMARY.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ESL_ROAMING.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="94" lean-forward="true" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/PRICE_CHANGE_STATISTICS.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="103" lean-forward="true" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ESL_STATUS.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="101" lean-forward="true" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/ESL_ROAMING_REPORT.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/ESL_SUMMARY_REPORT.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_LOW_BATTERY.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_WAITING_FOR_ ROAMING.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_WAITING_FOR_ UPDATE.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/LOW_BATTERY.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/PRICE_CHANGE_STATISTICS_REPORT.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_WAITING_FOR_ ROAMING.jasper">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/IiNNER_ESLs_LOW_BATTERY.jasper">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/PRICERLABEL_STATUS_REPORT.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
         </state>
       </provider>
     </entry>
