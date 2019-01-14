@@ -4,7 +4,7 @@
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
-		<![CDATA[SELECT * FROM ITEM WHERE OUT_OF_STOCK IS NOT NULL;]]>
+		<![CDATA[SELECT * FROM ITEM WHERE OUT_OF_STOCK IS NOT NULL and CHAR_LENGTH(OUT_OF_STOCK) > 3 ORDER BY OUT_OF_STOCK;]]>
 	</queryString>
 	<field name="ITEMID" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
@@ -117,12 +117,6 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch">
-			<staticText>
-				<reportElement x="0" y="0" width="185" height="20" />
-				<text><![CDATA[ITEMID]]></text>
-			</staticText>
-		</band>
 	</pageHeader>
 	<columnHeader>
 		<band height="61" splitType="Stretch">

@@ -6,7 +6,7 @@
 </head>
 <body>
 <div>
-  <img src="pricer_logo.png" width="20%"/>
+  <img src="NZESL_logoo.png" width="20%"/>
   <p>Reports:</p>
   <ul>
     <li><a href="ESL_RECENT_ROAMING_REPORT.jsp">ESL Recent Roaming Report</a></li>
