@@ -52,7 +52,10 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$R{eslStatusReport.PricerLblStatusReportTitle}]]></textFieldExpression>
 			</textField>
-
+			<image>
+				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
+				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
+			</image>
 			<textField isBlankWhenNull="false">
 				<reportElement uuid="07d078d3-1709-45a7-afd1-75a885879629" key="textField-10" x="1" y="38" width="224" height="25"/>
 				<box>

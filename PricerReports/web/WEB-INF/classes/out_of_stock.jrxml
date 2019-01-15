@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="out_of_stock" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
-	<property name="ireport.zoom" value="1.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="out_of_stock" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d1575c0e-1bf4-4e00-ae7c-e345db2af7ee">
+	<property name="ireport.zoom" value="3.4522712143931056"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
-		<![CDATA[SELECT * FROM ITEM WHERE OUT_OF_STOCK IS NOT NULL and CHAR_LENGTH(OUT_OF_STOCK) > 3 ORDER BY OUT_OF_STOCK;]]>
+		<![CDATA[SELECT * FROM ITEM WHERE OUT_OF_STOCK IS NOT NULL and CHAR_LENGTH(OUT_OF_STOCK) > 3 ORDER BY OUT_OF_STOCK]]>
 	</queryString>
 	<field name="ITEMID" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
@@ -109,43 +109,94 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch">
+		<band height="111" splitType="Stretch">
 			<staticText>
-				<reportElement x="214" y="22" width="151" height="20" />
-				<text><![CDATA[OUT OF STOCK REPORT]]></text>
+				<reportElement x="0" y="43" width="175" height="20" uuid="83d43a55-f8c4-413a-b010-6f17feab1ef0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESL Out Of Stock Report]]></text>
 			</staticText>
+			<subreport>
+				<reportElement x="185" y="63" width="205" height="48" uuid="93626473-2aa4-4af7-97aa-86a87b25be0c"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["out_of_stock_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="390" y="43" width="165" height="20" uuid="9a50ee17-ceec-4195-a564-40636bbf5868"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
+				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="42" width="555" height="1" uuid="7012c038-5a30-4503-8be9-012f6e2fc5b0"/>
+			</line>
+			<line>
+				<reportElement x="0" y="62" width="555" height="1" uuid="34a47e73-6aaf-44dc-b4db-c868529b202c"/>
+			</line>
 		</band>
 	</title>
 	<pageHeader>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="433" y="7" width="80" height="20" uuid="ab6f67c5-93e2-4cb4-af43-7f0d3a497cfd"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="7" width="40" height="20" uuid="b78b5d99-d0d1-4a1f-87f9-214fab7335f0"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch">
+		<band height="34" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="185" height="20" />
-				<text><![CDATA[ITEM_NAME]]></text>
+				<reportElement x="0" y="0" width="185" height="20" uuid="54c917c5-df35-4e73-be7a-f4b86afa8639"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ITEM NAME]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="185" y="0" width="185" height="20" />
-				<text><![CDATA[ITEMID]]></text>
+				<reportElement x="185" y="0" width="185" height="20" uuid="8197ff13-4408-4bff-b73a-979354cdb9b4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ITEM ID]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="370" y="0" width="185" height="20" />
-				<text><![CDATA[OUT_OF_STOCK]]></text>
+				<reportElement x="370" y="0" width="185" height="20" uuid="70397141-f58a-4648-a832-2308ccb2a587"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[OUT OF STOCK]]></text>
 			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="f44a85a9-e686-458d-86ca-3fb33ef35a53"/>
+			</line>
+			<line>
+				<reportElement x="0" y="19" width="555" height="1" uuid="7c714e4f-5536-4f9c-9cc9-85e238509987"/>
+			</line>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="25" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="0" width="185" height="20" />
+				<reportElement x="0" y="0" width="185" height="20" uuid="5711df21-9dc3-436d-8b3d-30c257b3cadb"/>
 				<textFieldExpression><![CDATA[$F{ITEM_NAME}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="185" y="0" width="185" height="20" />
+				<reportElement x="185" y="0" width="185" height="20" uuid="d67a2886-8ec7-4c3b-9cbc-65d4ebeec455"/>
 				<textFieldExpression><![CDATA[$F{ITEMID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="370" y="0" width="185" height="20" />
+				<reportElement x="370" y="0" width="185" height="20" uuid="a916a3c0-95c9-4a5e-82ad-6d0d8f12b512"/>
 				<textFieldExpression><![CDATA[$F{OUT_OF_STOCK}]]></textFieldExpression>
 			</textField>
 		</band>
@@ -157,6 +208,6 @@
 		<band height="54" splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="42" splitType="Stretch"/>
+		<band height="44" splitType="Stretch"/>
 	</summary>
 </jasperReport>

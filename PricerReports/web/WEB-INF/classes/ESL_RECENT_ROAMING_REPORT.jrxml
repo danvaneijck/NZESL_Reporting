@@ -113,6 +113,10 @@ order by I.ITEMDPTIDREF,R.TIMEENTEREDINROAMING DESC,I.ITEMID;]]>
 			<line>
 				<reportElement key="line-4" positionType="FixRelativeToBottom" x="1" y="69" width="534" height="1" forecolor="#000000" />
 			</line>
+			<image>
+				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
+				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>

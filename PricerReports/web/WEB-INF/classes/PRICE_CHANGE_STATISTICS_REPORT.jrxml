@@ -171,7 +171,10 @@
 				</textElement>
 				<textFieldExpression><![CDATA[java.text.DateFormat.getDateTimeInstance(0,2).format(new java.util.Date())]]></textFieldExpression>
 			</textField>
-
+			<image>
+				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
+				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>

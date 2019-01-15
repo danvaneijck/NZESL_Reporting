@@ -60,7 +60,10 @@ FROM ITEM, PRICERLABEL, ECLINK WHERE
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</graphicElement>
 			</line>
-
+			<image>
+				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
+				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
+			</image>
 			<textField isBlankWhenNull="false">
 				<reportElement uuid="3c42fb7c-d8a1-4c25-8430-586286207c9e" key="textField-3" x="1" y="38" width="263" height="24"/>
 				<box>

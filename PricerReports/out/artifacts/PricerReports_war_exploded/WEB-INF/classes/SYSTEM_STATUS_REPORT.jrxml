@@ -8,7 +8,9 @@
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
-	<parameter name="imagePath" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="imagePath" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["pricer_logo.gif"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jasperFilePath" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
@@ -97,7 +99,10 @@
 				<textFieldExpression><![CDATA[java.text.DateFormat.getDateTimeInstance(0,2).format(new java.util.Date())
 /*(new java.text.SimpleDateFormat("yyMMdd").format(new Date()))*/]]></textFieldExpression>
 			</textField>
-
+			<image>
+				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
+				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
+			</image>
 		</band>
 	</pageHeader>
 	<columnHeader>
