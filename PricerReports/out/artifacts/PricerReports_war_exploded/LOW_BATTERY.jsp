@@ -17,8 +17,7 @@
         //Connecting to the MySQL database
 
         Class.forName("com.mysql.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:7799/test", "pricer", "pricer");
-
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:7799/Pricer", "root", "");
 
         String jrxmlFile = this.getClass().getResource("/LOW_BATTERY.jrxml").getPath();
         InputStream input = new FileInputStream(new File(jrxmlFile));

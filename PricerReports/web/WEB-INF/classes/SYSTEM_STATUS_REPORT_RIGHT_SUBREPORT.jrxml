@@ -16,7 +16,8 @@
 		 bottomMargin="14"
 		 whenNoDataType="AllSectionsNoDetail"
 		 isTitleNewPage="false"
-		 isSummaryNewPage="false">
+		 isSummaryNewPage="false"
+		 resourceBundle="localization">
 	<property name="ireport.scriptlethandling" value="0" />
 	<property name="ireport.encoding" value="UTF-8" />
 	<import value="java.util.*" />

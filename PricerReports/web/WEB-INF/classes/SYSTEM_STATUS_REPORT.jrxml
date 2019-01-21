@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SYSTEM_STATUS_REPORT" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="ef8c85f4-49a7-411c-83da-3e4aab941c78">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SYSTEM_STATUS_REPORT" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" resourceBundle="localization" uuid="ef8c85f4-49a7-411c-83da-3e4aab941c78">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
 	<property name="ireport.zoom" value="1.5"/>
@@ -265,9 +265,9 @@
 					<subreportParameterExpression><![CDATA[$P{notAllocatedCount}]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-				<subreportExpression><![CDATA[$P{jasperFilePath}+"INTER_SYSTEM_STATUS_REPORT_LEFT_SUBREPORT.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA["INTER_SYSTEM_STATUS_REPORT_LEFT_SUBREPORT.jasper"]]></subreportExpression>
 			</subreport>
-			<subreport isUsingCache="true">
+			<subreport isUsingCache="false">
 				<reportElement uuid="8a6a3550-7838-4b15-a012-4a1b14fa8bc3" key="subreport-2" x="265" y="88" width="270" height="105"/>
 				<subreportParameter name="totalBsCount">
 					<subreportParameterExpression><![CDATA[$P{totalBsCount}]]></subreportParameterExpression>
@@ -276,15 +276,15 @@
 					<subreportParameterExpression><![CDATA[$P{notReadyBSCount}]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-				<subreportExpression><![CDATA[$P{jasperFilePath}+"SYSTEM_STATUS_REPORT_RIGHT_SUBREPORT.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA["SYSTEM_STATUS_REPORT_RIGHT_SUBREPORT.jasper"]]></subreportExpression>
 			</subreport>
-			<subreport isUsingCache="true">
+			<subreport isUsingCache="false">
 				<reportElement uuid="7d847aa1-25d8-47a4-94ae-957498eb3c0c" key="subreport-3" x="0" y="202" width="534" height="89"/>
 				<subreportParameter name="whereClauseQuery">
 					<subreportParameterExpression><![CDATA[$P{whereClauseQuery}]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-				<subreportExpression><![CDATA[$P{jasperFilePath}+"FAULTY_TRX_DETAILS.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA["FAULTY_TRX_DETAILS.jasper"]]></subreportExpression>
 			</subreport>
 			<line>
 				<reportElement uuid="a38f5cf4-4f74-4e58-bc3b-4ae961dd29dd" key="line-4" x="1" y="51" width="534" height="1" forecolor="#000000"/>
