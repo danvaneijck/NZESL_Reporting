@@ -2,7 +2,10 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="out_of_stock" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" resourceBundle="localization" uuid="d1575c0e-1bf4-4e00-ae7c-e345db2af7ee">
 	<property name="ireport.zoom" value="3.4522712143931056"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="63"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\danve\\Desktop\\NZESL_Reporting\\PricerReports\\web\\WEB-INF\\classes\\"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT * FROM ITEM WHERE OUT_OF_STOCK IS NOT NULL and CHAR_LENGTH(OUT_OF_STOCK) > 3 ORDER BY OUT_OF_STOCK]]>
 	</queryString>
@@ -111,19 +114,19 @@
 	<title>
 		<band height="111" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="43" width="175" height="20" uuid="83d43a55-f8c4-413a-b010-6f17feab1ef0"/>
+				<reportElement x="0" y="51" width="175" height="20" uuid="83d43a55-f8c4-413a-b010-6f17feab1ef0"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ESL Out Of Stock Report]]></text>
 			</staticText>
 			<subreport>
-				<reportElement x="185" y="63" width="205" height="48" uuid="93626473-2aa4-4af7-97aa-86a87b25be0c"/>
+				<reportElement x="185" y="70" width="205" height="41" uuid="93626473-2aa4-4af7-97aa-86a87b25be0c"/>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 				<subreportExpression><![CDATA["out_of_stock_subreport1.jasper"]]></subreportExpression>
 			</subreport>
 			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement x="390" y="43" width="165" height="20" uuid="9a50ee17-ceec-4195-a564-40636bbf5868"/>
+				<reportElement x="390" y="50" width="165" height="20" uuid="9a50ee17-ceec-4195-a564-40636bbf5868"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -134,28 +137,33 @@
 				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
 			</image>
 			<line>
-				<reportElement x="0" y="42" width="555" height="1" uuid="7012c038-5a30-4503-8be9-012f6e2fc5b0"/>
+				<reportElement x="0" y="50" width="555" height="1" uuid="7012c038-5a30-4503-8be9-012f6e2fc5b0"/>
 			</line>
 			<line>
-				<reportElement x="0" y="62" width="555" height="1" uuid="34a47e73-6aaf-44dc-b4db-c868529b202c"/>
+				<reportElement x="0" y="69" width="555" height="1" uuid="34a47e73-6aaf-44dc-b4db-c868529b202c"/>
 			</line>
+			<subreport>
+				<reportElement x="0" y="30" width="555" height="12" uuid="8f895e85-8003-4491-a429-40cd1dafca23"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "store_name.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="27" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="433" y="7" width="80" height="20" uuid="ab6f67c5-93e2-4cb4-af43-7f0d3a497cfd"/>
+				<reportElement x="432" y="0" width="80" height="20" uuid="ab6f67c5-93e2-4cb4-af43-7f0d3a497cfd"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="515" y="7" width="40" height="20" uuid="b78b5d99-d0d1-4a1f-87f9-214fab7335f0"/>
+				<reportElement x="514" y="0" width="40" height="20" uuid="b78b5d99-d0d1-4a1f-87f9-214fab7335f0"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="34" splitType="Stretch">
+		<band height="26" splitType="Stretch">
 			<staticText>
 				<reportElement x="0" y="0" width="185" height="20" uuid="54c917c5-df35-4e73-be7a-f4b86afa8639"/>
 				<textElement>

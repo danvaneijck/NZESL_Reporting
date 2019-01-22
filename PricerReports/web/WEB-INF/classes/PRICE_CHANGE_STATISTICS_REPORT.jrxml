@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PRICE_CHANGE_STATISTICS_REPORT" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" resourceBundle="localization" uuid="231d3b9c-6ea1-4356-8f0c-2cc331f46fbf">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
-	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.zoom" value="3.536921536500002"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<import value="net.sf.jasperreports.engine.*"/>
@@ -15,6 +15,9 @@
 	</parameter>
 	<parameter name="storeName" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["DefaultStoreName"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\danve\\Desktop\\NZESL_Reporting\\PricerReports\\web\\WEB-INF\\classes\\"]]></defaultValueExpression>
 	</parameter>
 	<field name="date" class="java.util.Date"/>
 	<field name="changes" class="java.lang.Integer"/>
@@ -38,7 +41,7 @@
 		<groupHeader>
 			<band height="16" splitType="Stretch">
 				<textField isStretchWithOverflow="true" pattern="MMMMM yyyy" isBlankWhenNull="true">
-					<reportElement uuid="efadaf8f-0b88-4596-929c-adbb279157eb" key="textField" x="0" y="2" width="91" height="12" forecolor="#000000" backcolor="#FFFFFF"/>
+					<reportElement key="textField" x="0" y="2" width="91" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="efadaf8f-0b88-4596-929c-adbb279157eb"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -55,7 +58,7 @@
 		<groupFooter>
 			<band height="37" splitType="Prevent">
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement uuid="86f49dcc-f0e2-4fc0-ae60-2be3aa25935e" key="staticText-8" x="0" y="8" width="91" height="18"/>
+					<reportElement key="staticText-8" x="0" y="8" width="91" height="18" uuid="86f49dcc-f0e2-4fc0-ae60-2be3aa25935e"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -68,7 +71,7 @@
 					<textFieldExpression><![CDATA[$R{pricerChangeStatistic.pageFooter.total}]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
-					<reportElement uuid="98599071-80c2-4c6e-9f46-889df8194700" key="textField" x="105" y="8" width="103" height="18"/>
+					<reportElement key="textField" x="105" y="8" width="103" height="18" uuid="98599071-80c2-4c6e-9f46-889df8194700"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -81,7 +84,7 @@
 					<textFieldExpression><![CDATA[$V{SUM_PRICE_CHANGE_COUNT_1}]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
-					<reportElement uuid="d5782619-edac-483d-9ddc-a8795ec5ca4c" key="textField" x="211" y="8" width="111" height="18"/>
+					<reportElement key="textField" x="211" y="8" width="111" height="18" uuid="d5782619-edac-483d-9ddc-a8795ec5ca4c"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -94,7 +97,7 @@
 					<textFieldExpression><![CDATA[$V{SUM_LINKS_COUNT_1}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement uuid="8583fdfb-48c0-4ed6-80e0-6518a3d4bc10" key="textField" x="322" y="8" width="95" height="18"/>
+					<reportElement key="textField" x="322" y="8" width="95" height="18" uuid="8583fdfb-48c0-4ed6-80e0-6518a3d4bc10"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -107,13 +110,13 @@
 					<textFieldExpression><![CDATA[$V{SUM_UNLINKS_COUNT_1}]]></textFieldExpression>
 				</textField>
 				<line direction="BottomUp">
-					<reportElement uuid="b2d11db5-98c5-4664-8a23-222f7300751a" key="line-1" x="0" y="30" width="535" height="1"/>
+					<reportElement key="line-1" x="0" y="30" width="535" height="1" uuid="b2d11db5-98c5-4664-8a23-222f7300751a"/>
 					<graphicElement>
 						<pen lineWidth="1.0" lineStyle="Solid"/>
 					</graphicElement>
 				</line>
 				<line direction="BottomUp">
-					<reportElement uuid="1e9d3a0f-f594-4f85-90e3-6628bc4b99f8" key="line-2" x="0" y="2" width="535" height="1"/>
+					<reportElement key="line-2" x="0" y="2" width="535" height="1" uuid="1e9d3a0f-f594-4f85-90e3-6628bc4b99f8"/>
 					<graphicElement>
 						<pen lineWidth="1.0" lineStyle="Solid"/>
 					</graphicElement>
@@ -125,9 +128,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="89" splitType="Stretch">
+		<band height="77" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="3ceeeedc-367c-45c8-9470-e44ad75d83a6" key="staticText" x="0" y="62" width="193" height="25" forecolor="#000000" backcolor="#FFFFFF"/>
+				<reportElement key="staticText" x="1" y="52" width="193" height="25" forecolor="#000000" backcolor="#FFFFFF" uuid="3ceeeedc-367c-45c8-9470-e44ad75d83a6"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -140,26 +143,13 @@
 				<textFieldExpression><![CDATA[$R{pricerChangeStatistic.pageHeading.monthlyActivityReport}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement uuid="c45a6e77-23b3-45b6-93c0-ae45600469dc" key="line" x="1" y="60" width="535" height="1"/>
+				<reportElement key="line" x="1" y="51" width="535" height="1" uuid="c45a6e77-23b3-45b6-93c0-ae45600469dc"/>
 				<graphicElement>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</graphicElement>
 			</line>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="b202b24e-edf2-4a53-ba05-34596b32315a" key="staticText-1" x="0" y="38" width="224" height="22"/>
-				<box>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="Arial" size="16" isBold="true" pdfFontName="Helvetica-Bold"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{storeName}]]></textFieldExpression>
-			</textField>
 			<textField isStretchWithOverflow="true" evaluationTime="Report" pattern="" isBlankWhenNull="false">
-				<reportElement uuid="0a433acb-7d69-429c-b6f8-b3ce79469549" key="textField-3" x="252" y="62" width="277" height="18"/>
+				<reportElement key="textField-3" x="253" y="52" width="277" height="18" uuid="0a433acb-7d69-429c-b6f8-b3ce79469549"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -175,24 +165,23 @@
 				<reportElement x="0" y="0" width="118" height="30" uuid="43a6d529-bbf5-44e0-b003-82647889f9db"/>
 				<imageExpression><![CDATA["pricer_logo.gif"]]></imageExpression>
 			</image>
+			<subreport>
+				<reportElement x="1" y="30" width="533" height="11" uuid="13dfaa47-f3aa-431f-95ee-617a17c24e25"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "store_name.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="27" splitType="Stretch">
-			<line>
-				<reportElement uuid="4d3bbd2e-2c65-4132-9e57-78636ae92c9f" key="line" x="0" y="1" width="534" height="1"/>
-				<graphicElement>
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-				</graphicElement>
-			</line>
+		<band height="23" splitType="Stretch">
 			<line direction="BottomUp">
-				<reportElement uuid="c9a4986d-6f68-473b-862d-81a00541ab64" key="line" x="0" y="25" width="535" height="1"/>
+				<reportElement key="line" x="0" y="20" width="535" height="1" uuid="c9a4986d-6f68-473b-862d-81a00541ab64"/>
 				<graphicElement>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 				</graphicElement>
 			</line>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="68fa2239-af5e-45bd-a076-abfbe4a1c852" key="staticText-3" x="0" y="5" width="91" height="17"/>
+				<reportElement key="staticText-3" x="0" y="4" width="91" height="17" uuid="68fa2239-af5e-45bd-a076-abfbe4a1c852"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -205,7 +194,7 @@
 				<textFieldExpression><![CDATA[$R{pricerChangeStatistic.column.date}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="6c7cd70c-b46e-41db-bd14-8fe0e1ab12b8" key="staticText-4" x="105" y="5" width="103" height="17"/>
+				<reportElement key="staticText-4" x="105" y="4" width="103" height="17" uuid="6c7cd70c-b46e-41db-bd14-8fe0e1ab12b8"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -218,7 +207,7 @@
 				<textFieldExpression><![CDATA[$R{pricerChangeStatistic.column.noOfPricesChange}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="99d73da1-b29a-40d9-a242-6852f5586286" key="staticText-5" x="211" y="5" width="111" height="17"/>
+				<reportElement key="staticText-5" x="211" y="4" width="111" height="17" uuid="99d73da1-b29a-40d9-a242-6852f5586286"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -231,7 +220,7 @@
 				<textFieldExpression><![CDATA[$R{pricerChangeStatistic.column.noOfLinkedEsls}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="758a6867-a7e0-4063-a7f8-e745585a065e" key="staticText-6" x="322" y="5" width="95" height="17"/>
+				<reportElement key="staticText-6" x="322" y="4" width="95" height="17" uuid="758a6867-a7e0-4063-a7f8-e745585a065e"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -244,7 +233,7 @@
 				<textFieldExpression><![CDATA[$R{pricerChangeStatistic.column.noOfUnlinkedEsls}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement uuid="a9a8a6d1-0a25-4123-a1e2-08d31a4a9349" key="staticText-7" x="417" y="5" width="114" height="17"/>
+				<reportElement key="staticText-7" x="417" y="4" width="114" height="17" uuid="a9a8a6d1-0a25-4123-a1e2-08d31a4a9349"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -256,6 +245,12 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$R{pricerChangeStatistic.column.noOfEslInRoaming}]]></textFieldExpression>
 			</textField>
+			<line>
+				<reportElement key="line" x="0" y="0" width="534" height="1" uuid="4d3bbd2e-2c65-4132-9e57-78636ae92c9f"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
 		</band>
 	</pageHeader>
 	<columnHeader>
@@ -264,7 +259,7 @@
 	<detail>
 		<band height="17" splitType="Stretch">
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement uuid="c3cfbf66-5c06-4cf6-9c50-83298771895c" key="textField" x="1" y="3" width="90" height="12" forecolor="#000000" backcolor="#FFFFFF"/>
+				<reportElement key="textField" x="1" y="3" width="90" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="c3cfbf66-5c06-4cf6-9c50-83298771895c"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -277,7 +272,7 @@
 				<textFieldExpression><![CDATA[java.text.DateFormat.getDateInstance(DateFormat.SHORT).format($F{date})/* --3 for short format */]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement uuid="b6e1c78d-697f-47f2-97dc-4488dffb200b" key="textField" x="105" y="3" width="103" height="12" forecolor="#000000" backcolor="#FFFFFF"/>
+				<reportElement key="textField" x="105" y="3" width="103" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="b6e1c78d-697f-47f2-97dc-4488dffb200b"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -290,7 +285,7 @@
 				<textFieldExpression><![CDATA[$F{changes}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement uuid="ac35b20f-46b2-4141-ac86-8e6868976e28" key="textField" x="211" y="3" width="111" height="12" forecolor="#000000" backcolor="#FFFFFF"/>
+				<reportElement key="textField" x="211" y="3" width="111" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="ac35b20f-46b2-4141-ac86-8e6868976e28"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -303,7 +298,7 @@
 				<textFieldExpression><![CDATA[$F{links}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement uuid="3564a42f-5a00-4606-bc50-63c6befa544c" key="textField" x="322" y="3" width="95" height="12" forecolor="#000000" backcolor="#FFFFFF"/>
+				<reportElement key="textField" x="322" y="3" width="95" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="3564a42f-5a00-4606-bc50-63c6befa544c"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -316,7 +311,7 @@
 				<textFieldExpression><![CDATA[$F{unlinks}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
-				<reportElement uuid="b8d44544-a3ee-4e39-8f7e-53f75ef4c53c" key="textField" x="417" y="3" width="106" height="12" forecolor="#000000" backcolor="#FFFFFF"/>
+				<reportElement key="textField" x="417" y="3" width="106" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="b8d44544-a3ee-4e39-8f7e-53f75ef4c53c"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -336,18 +331,17 @@
 	<pageFooter>
 		<band height="23" splitType="Stretch">
 			<textField isBlankWhenNull="false">
-				<reportElement uuid="200c20d0-71bf-4f31-91a3-fa554af3eca2" key="textField-1" x="234" y="2" width="37" height="17"/>
+				<reportElement key="textField-1" x="234" y="2" width="37" height="17" uuid="200c20d0-71bf-4f31-91a3-fa554af3eca2"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement/>
 				<textFieldExpression><![CDATA[$R{reports.Page}]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
-				<reportElement uuid="6f083241-e0e4-42f7-8901-76f130e758ca" key="textField-2" x="273" y="3" width="25" height="16"/>
+				<reportElement key="textField-2" x="273" y="3" width="25" height="16" uuid="6f083241-e0e4-42f7-8901-76f130e758ca"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
